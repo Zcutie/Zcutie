@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music/音乐</title>
+    <!--引入字体图标-->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/music.css">
+</head>
+<body>
+    <header>
+        <!--主播放菜单-->
+        <div class="menu_side">
+            <h1>播放列表</h1>
+            <div class="playlist">
+                <h4 class="active"> <span></span><i class="fa fa-music" aria-hidden="true"></i>播放列表</h4>
+                <h4> <span></span><i class="fa fa-music" aria-hidden="true"></i>稍后播放</h4>
+                <h4> <span></span><i class="fa fa-music" aria-hidden="true"></i>推荐</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="../image/music/song/jay.jpg" alt="jay">
+                    <h5>
+                        周杰伦
+                        <div class="subtitle">晴天</div>
+                    </h5>
+                    <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="../image/music/song/jay.jpg" alt="Eason">
+                    <h5>
+                        周杰伦
+                        <div class="subtitle">晴天</div>
+                    </h5>
+                    <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="../image/music/song/jay.jpg" alt="jay">
+                    <h5>
+                        周杰伦
+                        <div class="subtitle">晴天</div>
+                    </h5>
+                    <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="../image/music/jay.jpg" alt="jay">
+                    <h5>
+                        Jay
+                        <div class="subtitle">晴天</div>
+                    </h5>
+                    <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="../image/music/jay.jpg" alt="jay">
+                    <h5>
+                        Jay
+                        <div class="subtitle">晴天</div>
+                    </h5>
+                    <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="5"></i>
+                </li>
+            </div>
+        </div>
+
+        <!--导航栏-->
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>发现 <span></span></li>
+                    <li>我的播放</li>
+                    <li>电台</li>
+                </ul>
+                <!--搜索-->
+                <div class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="周深 大鱼">
+                </div>
+                <!--用户头像-->
+                <div class="user">
+                    <img src="../image/music/Zcutie.jpg" alt="" title="Zcutie">
+                </div>
+            </nav>
+            <!--推荐板块-->
+            <div class="content">
+                <h1>周杰伦 晴天</h1>
+                <p>
+                    故事的小黄花
+                    <br />
+                    从出生那年就飘着
+                </p>
+                <div class="buttons" id="buttons">
+                    <button>播放</button>
+                    <button>稍后</button>
+                </div>
+            </div>
+
+            <!--歌曲板块-->
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>流行音乐</h4>
+                    <div class="btn_s">
+                        <i id="left_scroll" class="fa fa-arrow-left" aria-hidden="true"></i>
+                        <i id="right_scroll" class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="6"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="7"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="8"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="9"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="10"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="11"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="12"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="13"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="../image/music/song/jay.jpg" alt="Jay">
+                            <i class="fa playListPlay fa-play-circle" aria-hidden="true" id="14"></i>
+                        </div>
+                        <h5>Jay
+                            <br>
+                            <div class="subtitle">晴天</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+
+            <!--歌手板块-->
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>流行歌手</h4>
+                    <!--55:34-->
+                    <div class="btn_s">
+                        <i id="left_scrolls" class="fa fa-arrow-left" aria-hidden="true"></i>
+                        <i id="right_scrolls" class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="../image/music/artists/jaybg.jpg" alt="周杰伦" title="周杰伦">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/Eason.jpg" alt="陈奕迅" title="陈奕迅">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/wangfei.jpg" alt="王菲" title="王菲">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/zhoushen.jpg" alt="周深" title="周深">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/maobuyi.jpg" alt="毛不易" title="毛不易">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/liuruoying.jpg" alt="刘若英" title="刘若英">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/wangsulong1.jpg" alt="汪苏泷" title="汪苏泷">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/xusong1.jpg" alt="许嵩" title="许嵩">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/sunyanzi.jpg" alt="孙燕姿" title="孙燕姿">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/tianfuzhen.jpg" alt="田馥甄" title="田馥甄">
+                    </li>
+                    <li>
+                        <img src="../image/music/artists/liangjingru.jpg" alt="梁静茹" title="梁静茹">
+                    </li>
+                </div>
+            </div>
+        </div>
+        
+        <!--播放板块-->
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="../image/music/song/jay.jpg" alt="Jay" id="poster_master_play">
+            <h5 id="title">周杰伦 <br/>
+                <div class="subtitle" >晴天</div>
+            </h5>
+            <div class="icon">
+                <i class="fa fa-step-backward" aria-hidden="true" id="back"></i>
+                <i class="fa fa-play" aria-hidden="true" id="masterPlay"></i>
+                <i class="fa fa-step-forward" aria-hidden="true" id="next"></i>
+                <!--<i class="fa fa-random" aria-hidden="true"></i> 随机播放图标-->
+                <!--<i class="fa fa-bars"></i> 顺序播放图标-->
+            </div>
+            <!--歌曲进度条-->
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" name="" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+
+            <div class="vol">
+                <i class="fa fa-volume-down" aria-hidden="true" id="vol_icon"></i>
+                <input type="range" name="" id="vol" min="30" value="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="../js/music.js"></script>
+</body>
+</html>
